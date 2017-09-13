@@ -51,7 +51,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>cpicker_logo_w9N_icon.ico</ApplicationIcon>
+    <ApplicationIcon>cpicker_logo_Beb_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>1D7A75E3C650260E0687011C1549F9581825EBD8</ManifestCertificateThumbprint>
@@ -119,6 +119,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="cpicker_logo_Beb_icon.ico" />
     <Content Include="cpicker_logo_w9N_icon.ico" />
     <None Include="Resources\ic_color_lens_white_48dp.png" />
   </ItemGroup>

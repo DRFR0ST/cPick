@@ -221,6 +221,17 @@ namespace CPickX
         {
             System.Diagnostics.Process.Start("https://material.io/guidelines/style/color.html#color-color-palette");
         }
+
+        private void colorPanel_pnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void colorPanel_pnl_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText("#" + (c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2")));
+            notifyIcon1.ShowBalloonTip(2000, "cPick", "#" + (c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2")) + " \nColor copied to clipboard.", ToolTipIcon.Info);
+        }
     }
 
     public static class MouseHook

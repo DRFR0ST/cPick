@@ -64,6 +64,8 @@
             this.colorPanel_pnl.Name = "colorPanel_pnl";
             this.colorPanel_pnl.Size = new System.Drawing.Size(405, 100);
             this.colorPanel_pnl.TabIndex = 1;
+            this.colorPanel_pnl.Click += new System.EventHandler(this.colorPanel_pnl_Click);
+            this.colorPanel_pnl.Paint += new System.Windows.Forms.PaintEventHandler(this.colorPanel_pnl_Paint);
             // 
             // pick_btn
             // 

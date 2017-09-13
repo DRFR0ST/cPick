@@ -1,0 +1,15 @@
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\obj\Debug\CPickX.csprojResolveAssemblyReference.cache
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\obj\Debug\CPickX.Form1.resources
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\obj\Debug\CPickX.Properties.Resources.resources
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\obj\Debug\CPickX.csproj.GenerateResource.Cache
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\bin\Debug\MaterialSkin.dll
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\bin\Debug\MaterialSkin.pdb
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\bin\Debug\cPick.exe.config
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\bin\Debug\cPick.exe
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\bin\Debug\cPick.pdb
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\obj\Debug\cPick.exe
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\obj\Debug\cPick.pdb
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\bin\Debug\cPick.exe.manifest
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\bin\Debug\cPick.application
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\obj\Debug\cPick.exe.manifest
+D:\Google Drive\Visual Studio\Projects\CPickX\CPickX\obj\Debug\cPick.application

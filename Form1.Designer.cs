@@ -72,7 +72,7 @@
             this.pick_btn.BackColor = System.Drawing.Color.Transparent;
             this.pick_btn.Depth = 0;
             this.pick_btn.Icon = null;
-            this.pick_btn.Location = new System.Drawing.Point(333, 176);
+            this.pick_btn.Location = new System.Drawing.Point(366, 176);
             this.pick_btn.MouseState = MaterialSkin.MouseState.HOVER;
             this.pick_btn.Name = "pick_btn";
             this.pick_btn.Primary = true;

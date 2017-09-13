@@ -49,6 +49,7 @@ namespace CPickX
                 Clipboard.SetText("#" + (c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2")));
                 isActive = false;
                 pick_btn.Text = "Pick";
+                pick_btn.Location = new Point(366, 176);
                 pick_btn.Enabled = true;
                 Update_timer.Enabled = false;
                 previewF.Hide();
@@ -153,6 +154,7 @@ namespace CPickX
                 Update_timer.Enabled = false;
                 isActive = false;
                 pick_btn.Text = "Pick";
+                pick_btn.Location = new Point(366, 176);
                 pick_btn.Enabled = true;
                 previewF.Hide(); previewFshadow.Hide();
             }
@@ -162,6 +164,7 @@ namespace CPickX
                 isActive = true;
                 pick_btn.Enabled = false;
                 pick_btn.Text = "Picking...";
+                pick_btn.Location = new Point(333, 176);
                 previewFshadow.Show();
 
                 previewF.Show();
@@ -208,6 +211,7 @@ namespace CPickX
                 Update_timer.Enabled = false;
                 isActive = false;
                 pick_btn.Text = "Pick";
+                pick_btn.Location = new Point(366, 176);
                 pick_btn.Enabled = true;
                 previewF.Hide(); previewFshadow.Hide();
             }

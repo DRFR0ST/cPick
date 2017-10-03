@@ -44,20 +44,47 @@ namespace CPickX
 
         private void MouseLeftClick(object sender, EventArgs e)
         {
-            if(isActive && !hoverForm)
+            if(sender.ToString() == "LBDOWN")
             {
-                Clipboard.SetText("#" + (c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2")));
-                isActive = false;
-                pick_btn.Text = "Pick";
-                pick_btn.Location = new Point(366, 176);
-                pick_btn.Enabled = true;
-                Update_timer.Enabled = false;
-                previewF.Hide();
-                previewFshadow.Hide();
-                notifyIcon1.ShowBalloonTip(2000, "cPick", "#" + (c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2")) + " \nColor copied to clipboard.", ToolTipIcon.Info);
-                
+                if(isActive && !hoverForm)
+                {
+                    Clipboard.SetText("#" + (c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2")));
+                    isActive = false;
+                    pick_btn.Text = "Pick";
+                    pick_btn.Location = new Point(366, 176);
+                    pick_btn.Enabled = true;
+                    Update_timer.Enabled = false;
+                    previewF.Hide();
+                    previewFshadow.Hide();
+                    notifyIcon1.ShowBalloonTip(2000, "cPick", "#" + (c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2")) + " \nColor copied to clipboard.", ToolTipIcon.Info);
+               
+                }
+ 
             }
-        }
+
+            if (sender.ToString() == "MMOVE")
+            {
+                if (isActive)
+                {
+                    Point cursor = new Point();
+                    GetCursorPos(ref cursor);
+
+                    c = GetColorAt(cursor);
+
+                    color_lbl.Text = c.R.ToString() + ", " + c.G.ToString() + ", " + c.B.ToString() + " - #" + (c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2"));
+
+                    colorPanel_pnl.BackColor = c;
+
+                    if (!previewF.Visible) { previewF.Show(); previewFshadow.Show(); }
+
+                    previewF.BackColor = c;
+                    previewF.Location = new Point(cursor.X + 15, cursor.Y + 20);
+
+
+                    previewFshadow.Location = new Point(cursor.X + 17, cursor.Y + 21);
+                }
+            }
+       }
 
         private void NotifyIcon1_BalloonTipShown(object sender, EventArgs e)
         {
@@ -77,7 +104,7 @@ namespace CPickX
             previewFshadow.Opacity = 0.2;
             previewFshadow.FormBorderStyle = FormBorderStyle.None;
             previewFshadow.Bounds = Screen.PrimaryScreen.Bounds;
-            previewFshadow.TopMost = false;
+            previewFshadow.TopMost = true;
             previewFshadow.Size = new Size(42, 42);
 
 
@@ -120,25 +147,25 @@ namespace CPickX
         
         private void Update_timer_Tick(object sender, EventArgs e)
         {
-            if(isActive)
-            {
-                Point cursor = new Point();
-                GetCursorPos(ref cursor);
+            //if(isActive)
+            //{
+            //    Point cursor = new Point();
+            //    GetCursorPos(ref cursor);
 
-                c = GetColorAt(cursor);
+            //    c = GetColorAt(cursor);
 
-                color_lbl.Text = c.R.ToString() + ", " + c.G.ToString() + ", " + c.B.ToString() + " - #" + (c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2"));
+            //    color_lbl.Text = c.R.ToString() + ", " + c.G.ToString() + ", " + c.B.ToString() + " - #" + (c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2"));
 
-                colorPanel_pnl.BackColor = c;
+            //    colorPanel_pnl.BackColor = c;
 
-                if (!previewF.Visible) { previewF.Show(); previewFshadow.Show(); }
+            //    if (!previewF.Visible) { previewF.Show(); previewFshadow.Show(); }
 
-                previewF.BackColor = c;
-                previewF.Location = new Point(cursor.X + 15, cursor.Y + 20);
+            //    previewF.BackColor = c;
+            //    previewF.Location = new Point(cursor.X + 15, cursor.Y + 20);
 
 
-                previewFshadow.Location = new Point(cursor.X + 17, cursor.Y + 21);
-            }
+            //    previewFshadow.Location = new Point(cursor.X + 17, cursor.Y + 21);
+            //}
 
         }
 
@@ -160,7 +187,7 @@ namespace CPickX
             }
             else
             {
-                Update_timer.Enabled = true;
+                Update_timer.Enabled = false;
                 isActive = true;
                 pick_btn.Enabled = false;
                 pick_btn.Text = "Picking...";
@@ -270,7 +297,12 @@ namespace CPickX
             if (nCode >= 0 && MouseMessages.WM_LBUTTONDOWN == (MouseMessages)wParam)
             {
                 MSLLHOOKSTRUCT hookStruct = (MSLLHOOKSTRUCT)Marshal.PtrToStructure(lParam, typeof(MSLLHOOKSTRUCT));
-                MouseAction(null, new EventArgs());
+                MouseAction("LBDOWN", new EventArgs());
+            }
+            if (nCode >= 0 && MouseMessages.WM_MOUSEMOVE == (MouseMessages)wParam)
+            {
+                MSLLHOOKSTRUCT hookStruct = (MSLLHOOKSTRUCT)Marshal.PtrToStructure(lParam, typeof(MSLLHOOKSTRUCT));
+                MouseAction("MMOVE", new EventArgs());
             }
             return CallNextHookEx(_hookID, nCode, wParam, lParam);
         }

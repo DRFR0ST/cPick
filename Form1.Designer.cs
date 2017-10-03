@@ -36,6 +36,7 @@
             this.pick_btn = new MaterialSkin.Controls.MaterialRaisedButton();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@
             // 
             // colorPanel_pnl
             // 
+            this.colorPanel_pnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(161)))));
             this.colorPanel_pnl.Location = new System.Drawing.Point(12, 70);
             this.colorPanel_pnl.Name = "colorPanel_pnl";
             this.colorPanel_pnl.Size = new System.Drawing.Size(405, 100);
@@ -104,6 +106,14 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Location = new System.Drawing.Point(15, 73);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(405, 100);
+            this.panel1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -113,6 +123,7 @@
             this.Controls.Add(this.pick_btn);
             this.Controls.Add(this.colorPanel_pnl);
             this.Controls.Add(this.color_lbl);
+            this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(431, 218);
@@ -142,6 +153,7 @@
         private MaterialSkin.Controls.MaterialRaisedButton pick_btn;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

@@ -818,7 +818,7 @@ namespace CPickX
                     return "Black";
 
                 case "#FFFFFF":
-                    return "Black";
+                    return "White";
 
                 default:
                     return null;

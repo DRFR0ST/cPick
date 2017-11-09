@@ -52,7 +52,7 @@
             this.color_lbl.Depth = 0;
             this.color_lbl.Font = new System.Drawing.Font("Roboto", 11F);
             this.color_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.color_lbl.Location = new System.Drawing.Point(12, 184);
+            this.color_lbl.Location = new System.Drawing.Point(12, 185);
             this.color_lbl.MouseState = MaterialSkin.MouseState.HOVER;
             this.color_lbl.Name = "color_lbl";
             this.color_lbl.Size = new System.Drawing.Size(202, 19);

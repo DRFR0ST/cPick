@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("cPick")]
-[assembly: AssemblyDescription("Color picker made for Karutek")]
+[assembly: AssemblyDescription("Color picker made for desktop devices")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("priv.")]
 [assembly: AssemblyProduct("cPick")]
@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
+[assembly: ComVisible(true)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("e5ecc47a-76d8-4211-b2b0-2d1c2e3b99e3")]

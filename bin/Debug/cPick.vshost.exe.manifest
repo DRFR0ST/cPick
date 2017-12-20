@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="cPick.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
-  <description asmv2:iconFile="cpicker_logo_Beb_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <asmv1:assemblyIdentity name="cPick.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="cPick" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="cPick.exe" size="149976">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="cPick.exe" size="1157080">
       <assemblyIdentity name="cPick" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ufFxLNvvZ4t5LtmOPn+upQihCJ1D3yFCgF2oG/UjZGw=</dsig:DigestValue>
+        <dsig:DigestValue>0kJUe30twFD049OiN0boO8ZyohlHvQLjGkHJyAmj5g0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -75,22 +75,13 @@
       <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="cpicker_logo_Beb_icon.ico" size="34381">
+  <file name="logo.ico" size="370070">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ZiIXvfCIwEWlyLuwLL1cuakMTwykmhs/a3UiFz0K5wI=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="cpicker_logo_w9N_icon.ico" size="35934">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WQRf50TgRLiBTj7/LbfKOkmdHdajDhrBtWQfn+AlcOE=</dsig:DigestValue>
+      <dsig:DigestValue>8xQDcqKf9Tcw3CfB2SyPCmeyNCFmWFFOd43+64agFYU=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
